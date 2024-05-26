@@ -16,7 +16,7 @@ public class Main {
         System.out.println("------------------------------------------------------------------------------------------------------");
         System.out.println("Customer Details:" + "\nCustomer name: " + customer.getname() + "\nAccount Number: " + customer.getaccountNumber() + 
         "\nChecking account Balance: " + customer.getcheckBalance() + "\nSaving account Balance: " + customer.getsavingBalance());
-        System.out.println("Note: Ovrdraft limit is $100. You can draw upto $100 more than your account balance");
+        System.out.println("Note: Ovrdraft limit is $100. You can draw upto $100 more than your account balance" + "\nMaximum withdrawal from Saving = $" + (customer.getsavingBalance() + 100)+ "\nMaximum withdrawal from Checking = $" + (customer.getcheckBalance() + 100));
         
         boolean continueTransactions = true;
 
